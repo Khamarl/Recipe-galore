@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import {RecipeList, Searchbar} from './components'
 
-
+//store array of recipes.
 const storedRecipes = [
   {name: 'Banana bread',
    description: 'A moist cake made from bananas' ,
@@ -41,6 +41,7 @@ const storedRecipes = [
 
 ]
 function App() {
+  //use state hook and pass it value of stored recipes 
   const [recipes, setRecipes] = useState(storedRecipes)
 
   return (
